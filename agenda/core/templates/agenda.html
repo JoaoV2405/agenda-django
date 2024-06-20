@@ -1,0 +1,10 @@
+{% extends "model-page.html" %}
+
+{% block content %}
+    <h2>Agendamentos</h2>
+<!-- {%%} serve para funções de python -->
+    {% for evento in eventos %}
+    <!-- {{}} serve para imprimir um objeto -->
+        <li>{{evento.titulo}}  -  {{evento.data_evento}} </li>
+    {% endfor %}
+{% end block %}
